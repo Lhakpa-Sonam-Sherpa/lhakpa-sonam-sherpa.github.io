@@ -215,6 +215,20 @@ a {
         .social-links ul li a{
             color: green;
         }
+
+        .social-links ul li a{
+            color: green;
+        }
+        
+        /* Footer Styles */
+        footer .footer-text{            
+            font-size: 0.7rem;
+            color: #666;
+            align-items: center;
+        }
+        .footer-text {
+            letter-spacing: 0.5px;
+        }
         
 @media (max-width: 768px) {
     .hero-name {
