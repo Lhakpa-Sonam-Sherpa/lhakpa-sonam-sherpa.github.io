@@ -71,7 +71,7 @@ header {
 }
 
 .hero{
-    background-image: url('./images/everestwithoutwatermark.jpg');
+    background-image: url('../images/everestwithoutwatermark.jpg');
     background-size: cover;
     background-position: center;
     padding: 12rem 0 6rem;
