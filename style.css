@@ -80,7 +80,6 @@ header {
 }
     .hero-name {
         background-color: rgba(0, 0, 0, 0.4);
-        backdrop-filter: blur(2px);
         color: white;
         display: inline-block;
         font-size: 5rem;
@@ -107,8 +106,8 @@ header {
         color: whitesmoke;
         max-width: 500px;
     }
-    .hero-name, .hero-title, .hero-subtitle{
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    .hero-title, .hero-subtitle{
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
     }
 .section-title::before {
     content: "";
