@@ -1,0 +1,271 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: whitesmoke;
+    color: black;
+    line-height: 1.6;
+}
+
+/* Navigation */
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: whitesmoke;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+
+.nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 1.5rem;
+    position: relative;
+    font-weight: 500;
+}
+
+.nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: black;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+
+/* Hero Section */
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/everestwithoutwatermark.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    text-shadow: 0 0 4px 2rem black;
+    text-align: center;
+    padding: 12rem 2rem 8rem;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    letter-spacing: -3px;
+    margin-bottom: 1rem;
+    animation: fadeIn 1s ease-out;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Section Common Styles */
+.section {
+    padding: 5rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.section h2::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background: black;
+    bottom: 0;
+    left: 0;
+}
+
+/* About Section */
+.about-content {
+    display: grid;
+    place-items: center;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 100%;
+}
+
+.about-content p{
+    text-align: left;
+    max-width: 700px;
+}
+.about-content a{
+    text-decoration: none;
+    font-size: 1.2erm;
+    color: black;
+    transition: color .4s ease-in;
+}
+.about-content a:hover{
+    text-decoration: underline;
+    color: red;
+}
+.about-content a:active{
+    color: brown;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.skill-item {
+    padding: 1.5rem;
+    border: 2px solid black;
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Education Timeline */
+.timeline {
+    border-left: 4px solid black;
+    padding-left: 2rem;
+    margin-left: 1rem;
+}
+
+.timeline-item {
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 15px;
+    background: black;
+    left: -2.6rem;
+    top: 0.5rem;
+    border-radius: 50%;
+}
+/* Books Section */
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.book-item {
+    text-align: left;
+    padding: 1.5rem;
+    border: 2px solid black;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.book-item:hover {
+    transform: translateY(-5px);
+}
+.book-item .heading{
+    height: 30%;
+    display: block;
+}
+
+.book-meta {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+
+/* Contact Section */        /* Contact Section */
+.contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+        .contact-info {
+            margin: 1.2rem 0 2rem 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-info a {
+            display: inline-block;
+            text-decoration: none;
+            display: block;
+            background-color: black;
+            color: white;
+            position: relative;
+            margin-bottom: .5rem;
+            padding: 0 1rem;
+            border: .1rem solid transparent;
+            border-radius: .3rem;
+            /* transition: all .8s ease-in; */
+            transition: color .5s ease;
+            transition: background-color .1s linear;
+            transition: border .8s ease;
+        }
+
+        .contact-info a:hover{
+            background-color: white;
+            color: black;
+            border: .1rem solid black;
+        }
+
+        .copyright{
+            color: #333;
+            margin-left: -1.2rem;
+        }   
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .nav a {
+        margin: 0 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .section {
+        padding: 3rem 1.5rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
