@@ -3,89 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lhakpa Sonam Sherpa - Portfolio</title>
+    <title>Lhakpa Sonam Sherpa | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#home">
-                <div class="nav-logo">
-                    <p class="flag blue">F</p>
-                    <p class="flag white">L</p>
-                    <p class="flag red">O</p>
-                    <p class="flag green">W</p>
-                    <p class="flag yellow">S</p>
-                </div>
-            </a> 
-            
-            <div class="nav-link">   
-                <a href="#projects" class="link">Projects</a>
-                <a href="#about" class="link">About</a>
-                <a href="#contact" class="link">Contact</a>
-            </div>
-        </nav>
-    </header>
+    <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#books">Books</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-    <main class="container">
-        <section class="hero" id="home">
-            <div class="hero-content">
-                <h1 class="hero-name">LHAKPA<br>SONAM<br>SHERPA</h1>
-                <div class="hero-text-group">
-                    <h2 class="hero-title">Student & Programmer</h2>
-                    <p class="hero-subtitle"><q>Creating digital experiences through thoughtful design and clean code</q></p>
-                </div>
-            </div>
-        </section>
+    <section id="home" class="hero">
+        <h1>Lhakpa Sonam Sherpa</h1>
+        <p>Student & Aspiring Machine Learning Developer</p>
+    </section>
 
-        <section class="work-section">
-            <h2 class="section-title" id="projects">Projects</h2>
-            <div class="project-grid">
-                <article class="project-card">
-                    <a href="#" class="project-link">
-                        <div class="project-image"></div>
-                        <p class="project-category">Web Development</p>
-                    </a>
-                </article>
-                <article>
-                    <a href="#" class="project-link">
-                        <div class="project-image"></div>
-                        <p class="project-category">Python Fundamentals</p>
-                    </a>
-                </article>
-            </div>
-        </section>
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p><q>A dedicated IT student currently pursuing my Bachelor's degree in Computer Applicaion (BCA) at <a href="">Samarpan Academy</a>. 
+                I'am passionate about technology with a strong focus on machine learning and Python development.</q></p>
+        </div>
+    </section>
 
-        <section class="about-section" id="about">
-            <h2 class="section-title">About</h2>
-            <div class="about-content">
-                <p class="about-text">I'm a dedicated learner with a strong foundation in Python and a growing expertise in web development (HTML, CSS, JavaScript). I’ve built several small projects, applying clean code practices and logical problem-solving. Recently, I’ve started exploring Machine Learning with Python, continuously pushing my skills forward. I'm always eager to learn, improve, and take on new challenges.</p>
-                <div class="skills">
-                    <h3 class="skills-title">Capabilities: </h3>
-                    <ul class="skills-list">
-                        <li>Python Programming</li>
-                        <li>Web Development Basics</li>
-                        <li>Algorithm Design</li>
-                        <li>Project Implementation</li>
-                    </ul>
-                </div>
+    <section id="skills" class="section">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <h3>Programming Languages</h3>
+                <p>Python, C, HTML/CSS</p>
             </div>
-        </section>
-    </main>
+            <div class="skill-item">
+                <h3>Frameworks & Tools</h3>
+                <p>Git, Visual-Studio Code</p>
+            </div>
+        </div>
+    </section>
 
-    <footer  id="contact">
-                <div class="social-links">
-                    <P class="name">Lhakpa Sonam Sherpa</P>
-                    <ul>
-                        <li>Email: <a href="mailto:soamsrp.653@gmail.com" class="email-link">soamsrp.653@gamil.com</a></li>
-                        <li>Github: <a href="https://github.com/Lhakpa-Sonam-Sherpa" class="email-link">github.com/Lhakpa-Sonam-Sherpa</a></li>
-                    </ul>
+    <section id="education" class="section">
+        <h2>Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Bachelor in Computer Application</h3>
+                <p>Samarpan Academy ( 2023 - present )</p>
+            </div>
+            <div class="timeline-item">
+                <h3>+2 in Science</h3>
+                <p>St. Lawrence College (2020-2022)</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Secoandary Education</h3>
+                <p>Shridiwa International School - 2019</p>
+            </div>
+        </div>
+    </section>
+    <section id="books" class="section">
+        <h2>Recent Reads</h2>
+        <div class="books-grid">
+            <div class="book-item">
+                <div class="heading">
+                    <h3>Python Crash Course</h3>
                 </div>
-                <p class="footer-text">&copy; <span id="current-year"></span> Lhakpa Sonam Sherpa. All rights reserved.</p>
+                <p class="book-meta">by Eric Matthes · Programming</p>
+                <p>A hands-on introduction to Python programming with practical projects.</p>
+            </div>
+            <div class="book-item">
+                    <div class="heading">
+                        <h3>Hands-On Machine Learning</h3>
+                    </div>
+                    <p class="book-meta">by Aurélien Géron · AI/ML</p>
+                    <p>Practical techniques for building intelligent systems with Scikit-Learn and TensorFlow.</p>
+            </div>
+            <div class="book-item">
+                    <div class="heading">
+                        <h3>Clean Code</h3>
+                    </div>
+                    <p class="book-meta">by Robert C. Martin · Software Development</p>
+                    <p>Best practices for writing maintainable and efficient code.</p>
+            </div>
+        </div>
+    </section>    
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <h3>Let's Connect</h3>
+        <div class="contact-info">
+            <a href="mailto:soamsrp.653@gmail.com">E-mail</a>
+            <a href="https://github.com/Lhakpa-Sonam-Sherpa" target="_blank">GitHub</a>
+        </div>
+        <p><b>Kathmandu, Nepal</b></p>
+        
+        <p class="copyright"><b>&copy Lhakpa Sonam Sherpa</b></p>
+    </section>
+    <footer >
     </footer>
-    <script>
-        // Auto-update year
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
 </body>
 </html>
