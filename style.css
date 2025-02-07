@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background: whitesmoke;
+    background: white;
     color: black;
     line-height: 1.6;
 }
@@ -22,7 +22,7 @@ body {
     top: 0;
     width: 100%;
     background: whitesmoke;
-    padding: 1.5rem;
+    padding: 1rem 0;
     text-align: center;
     box-shadow: 0 2px 8px rgba(0,0,0,0.3);
     z-index: 100;
@@ -41,10 +41,10 @@ body {
     position: absolute;
     width: 0;
     height: 2px;
-    background: black;
     bottom: -5px;
     left: 0;
-    transition: width 0.3s ease;
+    background-image: linear-gradient(90deg in oklab, blue, red);
+    transition: width 0.5s linear;
 }
 
 .nav a:hover::after {
@@ -81,7 +81,7 @@ body {
 
 /* Section Common Styles */
 .section {
-    padding: 5rem 2rem;
+    padding: 4rem 2rem;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -116,6 +116,7 @@ body {
     text-align: left;
     max-width: 700px;
 }
+
 .about-content a{
     text-decoration: none;
     font-size: 1.2erm;
@@ -230,33 +231,37 @@ body {
 
 /* Contact Section */        /* Contact Section */
 #contact{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
+
         .contact-info {
             margin: 1.2rem 0 2rem 0;
             display: flex;
             align-items: flex-start;
-            gap: 1.5rem;
             font-size: 1.1rem;
         }
 
-        .contact-info a {
-            text-decoration: none;
-            color: black;
-            position: relative;
+        .contact-info a{
+            color: #222;
+            margin: 10px;
+            padding: 0 .5rem;
+            font-weight: bold;
+            text-align: center;
             margin-bottom: .5rem;
-            padding: 0 1rem;
+            text-decoration: none;
+            border-radius: .5rem;
             border: .1rem solid transparent;
-            border-radius: .3rem;
-            transition: border .8s ease;
+            transition: border.7s;
         }
-
-        .contact-info a:hover{
+        .contact-info a:hover:after{
+            opacity: 1;
+        }
+        .contact-info a:hover{ 
             border: .1rem solid black;
         }
-
         .copyright{
             color: #333;
             margin-left: -1.2rem;
@@ -272,14 +277,33 @@ body {
     .hero h1 {
         font-size: 2.5rem;
     }
-    .skills-grid, .books-grid {
+    
+    .nav a {
+        margin: 0 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .section {
+        padding: 3rem 1.5rem;
+    }
+
+    .skills-grid {
         grid-template-columns: 1fr;
     }
-        .nav a {
+}
+@media (max-width: 768px) {
+    .nav a {
         margin: 0 0.5rem;
         font-size: 0.8rem;
     }
-        .section {
+}
+@media (max-width: 768px) {
+    .skills-grid, .books-grid {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 768px) {
+    .section {
         padding: 2rem 1rem;
     }
 }
