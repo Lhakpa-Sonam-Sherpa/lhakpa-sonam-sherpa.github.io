@@ -118,19 +118,14 @@ body {
 }
 
 .about-content a{
-    text-decoration: none;
-    font-size: 1.2erm;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    font-size: 1.2rem;
     color: red;
-    transition: color .4s ease-in;
+    transition: text-decoration .2s ease-in;
 }
 .about-content a:hover{
-    text-decoration: underline;
-    color: red;
-}
-.about-content a:active{
-    color: red;
-    font-size: 1rem;
-    font-weight: bold;
+    text-decoration-color: red;
 }
 
 /* Skills Grid */
@@ -161,11 +156,6 @@ body {
     margin-left: 1rem;
 }
 
-.timeline-item {
-    margin-bottom: 3rem;
-    position: relative;
-}
-
 .timeline-item::before {
     content: '';
     position: absolute;
@@ -176,6 +166,23 @@ body {
     top: 0.5rem;
     border-radius: 50%;
 }
+
+.timeline-item {
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.timeline-item a{
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    font-size: 1.2rem;
+    color: red;
+    transition: text-decoration .2s ease-in;
+}
+.timeline-item a:hover{
+    text-decoration-color: red;
+}
+
 /* Books Section */
 .books-grid {
     display: grid;
