@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Platform Case Study | Lhakpa Sonam Sherpa</title>
+    <meta name="description" content="Case study: E-commerce platform designed and built by Lhakpa Sonam Sherpa with focus on performance, payments, and DX.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav container">
+            <a class="logo" href="../index.html">
+                <span class="logo-mark">LS</span>
+                <span class="logo-text">Lhakpa Sonam Sherpa</span>
+            </a>
+            <div class="nav-links">
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="section container">
+        <div class="section-header">
+            <p class="eyebrow">Case Study</p>
+            <h1>E-Commerce Platform</h1>
+            <p class="subtle">A modern storefront with secure checkout, analytics, and a clean admin experience.</p>
+        </div>
+
+        <div class="about-grid">
+            <div class="card glass">
+                <p class="pill subtle">Problem</p>
+                <h3>Fragmented shopping journey</h3>
+                <p>Users abandoned checkout because of slow pages, limited payment options, and no inventory visibility.</p>
+                <ul>
+                    <li>Unreliable stock data caused failed orders.</li>
+                    <li>Checkout flow lacked trust signals and validation.</li>
+                    <li>Admins could not observe trends or manage catalog quickly.</li>
+                </ul>
+            </div>
+
+            <div class="card glass">
+                <p class="pill subtle">Approach</p>
+                <h3>Experience-first architecture</h3>
+                <p>Focused on reliability and clarity using layered architecture with caching, logging, and type-safe inputs.</p>
+                <ul>
+                    <li>Modular services for catalog, cart, and payments.</li>
+                    <li>Shared UI kit for product cards, pricing, and CTAs.</li>
+                    <li>Observability through structured logs and metrics.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="skills-grid" style="margin-top:1.5rem;">
+            <div class="card glass">
+                <p class="pill subtle">Architecture</p>
+                <h3>How it was built</h3>
+                <p>Backend written in PHP with REST endpoints, backed by MySQL and Redis cache. Frontend uses component-based layouts and responsive grids.</p>
+                <ul class="feature-list">
+                    <li>JWT-secured APIs with role-based access.</li>
+                    <li>Webhooks for payment success/failure and inventory sync.</li>
+                    <li>Image optimization and lazy loading on the storefront.</li>
+                </ul>
+            </div>
+            <div class="card glass">
+                <p class="pill subtle">Technologies</p>
+                <h3>Stack</h3>
+                <div class="skill-icons">
+                    <i class="devicon-php-plain colored" aria-hidden="true"></i>
+                    <i class="devicon-mysql-plain colored" aria-hidden="true"></i>
+                    <i class="devicon-html5-plain colored" aria-hidden="true"></i>
+                    <i class="devicon-css3-plain colored" aria-hidden="true"></i>
+                    <i class="devicon-javascript-plain colored" aria-hidden="true"></i>
+                </div>
+                <p class="subtle">CI/CD with GitHub Actions; monitoring with simple dashboards.</p>
+            </div>
+        </div>
+
+        <div class="about-grid" style="margin-top:1.5rem;">
+            <div class="card glass">
+                <p class="pill subtle">Challenges</p>
+                <h3>Scaling reads &amp; writes</h3>
+                <p>Balancing catalog read performance with consistent inventory updates.</p>
+                <ul class="feature-list">
+                    <li>Implemented read-through cache with expirations.</li>
+                    <li>Optimized queries with proper indexing and EXPLAIN plans.</li>
+                    <li>Added background jobs for analytics aggregation.</li>
+                </ul>
+            </div>
+            <div class="card glass">
+                <p class="pill subtle">Lessons Learned</p>
+                <h3>What improved</h3>
+                <p>Shipped a faster checkout and built empathy for both shoppers and admins.</p>
+                <ul class="feature-list">
+                    <li>Importance of observability in debugging payment edge cases.</li>
+                    <li>Value of strong UX writing in building trust.</li>
+                    <li>Design systems accelerate iteration across pages.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-header" style="margin-top:2rem;">
+            <p class="eyebrow">Outcome</p>
+            <h2>Result</h2>
+            <p class="subtle">Improved checkout completion, clearer admin insights, and a reusable component library for future features.</p>
+        </div>
+
+        <div class="project-links">
+            <a class="btn primary" href="../index.html#projects">Back to Projects</a>
+            <a class="btn ghost" href="https://github.com/Lhakpa-Sonam-Sherpa" target="_blank" rel="noopener">View Source</a>
+        </div>
+    </main>
+</body>
+</html>
