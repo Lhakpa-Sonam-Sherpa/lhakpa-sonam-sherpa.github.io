@@ -3,106 +3,429 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lhakpa Sonam Sherpa | Portfolio</title>
-    <meta name="description" content="A minimal portfolio design.">
+    <title>Lhakpa Sonam Sherpa | Full-Stack Developer</title>
+    <meta name="description" content="Portfolio of Lhakpa Sonam Sherpa — Full-Stack Developer building scalable, performant web experiences.">
     <meta name="robots" content="index,follow">
     <meta name="author" content="Lhakpa Sonam Sherpa">
-    <meta name="copyright" content="2025 Lhakpa Sonam Sherpa">
-    <meta name="keywords" content="portfolio, web developer, css animation, simple design, minima design, frontend developer">
-    <meta name="rating" content="general">
-    <meta name="distribution" content="global">
+    <meta name="keywords" content="Full-Stack Developer, Software Engineer, Portfolio, JavaScript, PHP, MySQL, Frontend, Backend">
+    <meta name="theme-color" content="#0F172A">
+    <meta property="og:title" content="Lhakpa Sonam Sherpa | Full-Stack Developer">
+    <meta property="og:description" content="Building scalable web applications and solving real problems with code.">
+    <meta property="og:image" content="images/everestwithoutwatermark.webp">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lhakpa-sonam-sherpa.github.io">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://lhakpa-sonam-sherpa.github.io/">
+    <link rel="sitemap" type="application/xml" href="sitemap.xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Lhakpa Sonam Sherpa",
+      "jobTitle": "Full-Stack Developer",
+      "url": "https://lhakpa-sonam-sherpa.github.io",
+      "image": "images/everestwithoutwatermark.webp",
+      "sameAs": [
+        "https://github.com/Lhakpa-Sonam-Sherpa",
+        "https://www.linkedin.com"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Kathmandu",
+        "addressCountry": "NP"
+      }
+    }
+    </script>
 </head>
 <body>
-    <nav class="nav">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#books">Books</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <header class="site-header">
+        <nav class="nav container">
+            <a class="logo" href="#home" aria-label="Lhakpa Sonam Sherpa home">
+                <span class="logo-mark">LS</span>
+                <span class="logo-text">Lhakpa Sonam Sherpa</span>
+            </a>
+            <div class="nav-links">
+                <a href="#projects">Projects</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+                <a href="resume.pdf" download>Resume</a>
+            </div>
+        </nav>
+    </header>
 
-    <section id="home" class="hero">
-        <h1>Lhakpa Sonam Sherpa</h1>
-        <p>Student</p>
-    </section>
-
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <p><q>I am currently pursuing my Bachelor's degree in Computer Applicaion (BCA) at <a href="https://www.tuicms.edu.np/">Samarpan Academy</a>.</q></p>
-        </div>
-    </section>
-
-    <section id="skills" class="section">
-        <h2>Technical Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-item">
-                <h3>Programming Languages</h3>
-                <p>Python, C, HTML/CSS</p>
-            </div>
-            <div class="skill-item">
-                <h3>Frameworks & Tools</h3>
-                <p>Git, Visual-Studio Code</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="education" class="section">
-        <h2>Education</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <h3>Bachelor in Computer Application</h3>
-                <p><a href="https://www.tuicms.edu.np/">Samarpan Academy</a> ( 2023 - present )</p>
-            </div>
-            <div class="timeline-item">
-                <h3>+2 in Science</h3>
-                <p><a href="https://www.stlawrence.edu.np/">St. Lawrence College</a> (2020-2022)</p>
-            </div>
-            <div class="timeline-item">
-                <h3>Secoandary Education</h3>
-                <p><a href="#education">Shridiwa International School</a> - 2019</p>
-            </div>
-        </div>
-    </section>
-    <section id="books" class="section">
-        <h2>Recent Reads</h2>
-        <div class="books-grid">
-            <div class="book-item">
-                <div class="heading">
-                    <h3>Python Crash Course</h3>
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero__grid">
+                <div class="hero__content">
+                    <p class="eyebrow">Full-Stack Developer / Software Engineer</p>
+                    <h1>Building scalable web applications and solving real problems with code.</h1>
+                    <p class="lede">I design and engineer modern digital experiences focused on performance, accessibility, and clean developer experience.</p>
+                    <div class="hero__actions">
+                        <a class="btn primary" href="#projects">View Projects</a>
+                        <a class="btn ghost" href="resume.pdf" download>Download Resume</a>
+                        <a class="btn text" href="#contact">Contact Me</a>
+                    </div>
+                    <div class="hero__meta">
+                        <span class="pill">Kathmandu, Nepal</span>
+                        <span class="pill">Available for internships</span>
+                        <span class="pill">Open to remote</span>
+                    </div>
                 </div>
-                <p class="book-meta">by Eric Matthes · Programming</p>
-                <p>A hands-on introduction to Python programming with practical projects.</p>
-            </div>
-            <div class="book-item">
-                    <div class="heading">
-                        <h3>Hands-On Machine Learning</h3>
+                <div class="hero__visual">
+                    <div class="avatar" role="img" aria-label="Profile avatar">LS</div>
+                    <div class="hero-card glass">
+                        <p class="card-title">Currently</p>
+                        <p class="card-sub">BCA Student @ Samarpan Academy</p>
+                        <div class="pill-list">
+                            <span class="pill subtle">Frontend</span>
+                            <span class="pill subtle">Backend</span>
+                            <span class="pill subtle">Systems Thinking</span>
+                        </div>
                     </div>
-                    <p class="book-meta">by Aurélien Géron · AI/ML</p>
-                    <p>Practical techniques for building intelligent systems with Scikit-Learn and TensorFlow.</p>
+                </div>
             </div>
-            <div class="book-item">
-                    <div class="heading">
-                        <h3>Clean Code</h3>
-                    </div>
-                    <p class="book-meta">by Robert C. Martin · Software Development</p>
-                    <p>Best practices for writing maintainable and efficient code.</p>
-            </div>
-        </div>
-    </section>    
+            <div class="hero__bg"></div>
+        </section>
 
-    <section id="contact" class="section">
-        <h2>Contact</h2>
-        <div class="contact-info">
-            <a href="mailto:soamsrp.653@gmail.com">E-mail</a>
-            <a href="https://github.com/Lhakpa-Sonam-Sherpa">GitHub</a>
+        <section id="about" class="section container">
+            <div class="section-header">
+                <p class="eyebrow">About</p>
+                <h2>Engineer with a product mindset</h2>
+                <p class="subtle">I love crafting interfaces that feel effortless and building systems that scale with clarity.</p>
+            </div>
+            <div class="about-grid">
+                <div class="card glass">
+                    <h3>Who I am</h3>
+                    <p>I am a Computer Application student combining product thinking with hands-on engineering. I focus on building experiences that are performant, accessible, and delightful.</p>
+                    <ul>
+                        <li>Fluent in turning ideas into prototypes and shipping reliable features.</li>
+                        <li>Comfortable across the stack: frontend, backend, and databases.</li>
+                        <li>Strong collaboration mindset with attention to detail and UX.</li>
+                    </ul>
+                </div>
+                <div class="card glass highlight">
+                    <h3>What I value</h3>
+                    <div class="list-chips">
+                        <span class="pill">Design systems</span>
+                        <span class="pill">Performance</span>
+                        <span class="pill">Accessibility</span>
+                        <span class="pill">DX</span>
+                        <span class="pill">Clean architecture</span>
+                    </div>
+                    <p>My work blends modern UI patterns with robust engineering practices to deliver impactful products.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section container">
+            <div class="section-header">
+                <p class="eyebrow">Skills &amp; Tech Stack</p>
+                <h2>Tools I use to build</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="card glass">
+                    <div class="card-heading">
+                        <p class="pill subtle">Frontend</p>
+                        <h3>Interfaces</h3>
+                    </div>
+                    <div class="skill-icons">
+                        <i class="devicon-html5-plain colored" aria-hidden="true"></i>
+                        <i class="devicon-css3-plain colored" aria-hidden="true"></i>
+                        <i class="devicon-javascript-plain colored" aria-hidden="true"></i>
+                    </div>
+                    <p>Reusable components, responsive layouts, and accessible interactions.</p>
+                </div>
+                <div class="card glass">
+                    <div class="card-heading">
+                        <p class="pill subtle">Backend</p>
+                        <h3>APIs &amp; Services</h3>
+                    </div>
+                    <div class="skill-icons">
+                        <i class="devicon-php-plain colored" aria-hidden="true"></i>
+                        <i class="devicon-nodejs-plain colored" aria-hidden="true"></i>
+                        <i class="devicon-express-original colored" aria-hidden="true"></i>
+                    </div>
+                    <p>RESTful APIs with secure authentication and maintainable architecture.</p>
+                </div>
+                <div class="card glass">
+                    <div class="card-heading">
+                        <p class="pill subtle">Database</p>
+                        <h3>Data Layer</h3>
+                    </div>
+                    <div class="skill-icons">
+                        <i class="devicon-mysql-plain colored" aria-hidden="true"></i>
+                        <i class="devicon-sqlite-plain colored" aria-hidden="true"></i>
+                    </div>
+                    <p>Relational schemas, migrations, and query optimization for scale.</p>
+                </div>
+                <div class="card glass">
+                    <div class="card-heading">
+                        <p class="pill subtle">Tools</p>
+                        <h3>Collaboration</h3>
+                    </div>
+                    <div class="skill-icons">
+                        <i class="devicon-git-plain colored" aria-hidden="true"></i>
+                        <i class="devicon-github-original colored" aria-hidden="true"></i>
+                        <i class="devicon-vscode-plain colored" aria-hidden="true"></i>
+                    </div>
+                    <p>Version control, code reviews, and automation pipelines for reliability.</p>
+                </div>
+                <div class="card glass">
+                    <div class="card-heading">
+                        <p class="pill subtle">Languages</p>
+                        <h3>Core</h3>
+                    </div>
+                    <div class="skill-icons">
+                        <i class="devicon-c-plain colored" aria-hidden="true"></i>
+                        <i class="devicon-java-plain colored" aria-hidden="true"></i>
+                        <i class="devicon-python-plain colored" aria-hidden="true"></i>
+                    </div>
+                    <p>Fluent in multiple languages to choose the right tool for each project.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section container">
+            <div class="section-header">
+                <p class="eyebrow">Featured Projects</p>
+                <h2>Products that ship value</h2>
+                <p class="subtle">Project cards with live demos, GitHub repos, and the problems they solve.</p>
+            </div>
+            <div class="project-grid">
+                <article class="project-card glass">
+                    <div class="project-thumb gradient-one"></div>
+                    <div class="project-body">
+                        <div class="project-header">
+                            <h3>E-Commerce Experience</h3>
+                            <div class="pill-list">
+                                <span class="pill subtle">PHP</span>
+                                <span class="pill subtle">MySQL</span>
+                                <span class="pill subtle">Stripe</span>
+                            </div>
+                        </div>
+                        <p>End-to-end storefront with secure checkout, admin dashboard, and product analytics.</p>
+                        <ul class="feature-list">
+                            <li>Problem: Fragmented catalog and poor checkout conversions.</li>
+                            <li>Solution: Streamlined flows with validation, inventory sync, and order insights.</li>
+                            <li>Learning: Payment integration, caching, and API design.</li>
+                        </ul>
+                        <div class="project-links">
+                            <a class="btn text" href="#case-studies">Case Study</a>
+                            <a class="btn ghost" href="https://github.com/Lhakpa-Sonam-Sherpa" target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card glass">
+                    <div class="project-thumb gradient-two"></div>
+                    <div class="project-body">
+                        <div class="project-header">
+                            <h3>Campus Community App</h3>
+                            <div class="pill-list">
+                                <span class="pill subtle">JavaScript</span>
+                                <span class="pill subtle">Node.js</span>
+                                <span class="pill subtle">MongoDB</span>
+                            </div>
+                        </div>
+                        <p>Social hub for students with events, messaging, and moderation controls.</p>
+                        <ul class="feature-list">
+                            <li>Problem: Disconnected communication across clubs.</li>
+                            <li>Solution: Real-time feeds, event RSVPs, and role-based permissions.</li>
+                            <li>Learning: WebSockets, rate limiting, and UX for moderation.</li>
+                        </ul>
+                        <div class="project-links">
+                            <a class="btn text" href="#case-studies">Case Study</a>
+                            <a class="btn ghost" href="https://github.com/Lhakpa-Sonam-Sherpa" target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card glass">
+                    <div class="project-thumb gradient-three"></div>
+                    <div class="project-body">
+                        <div class="project-header">
+                            <h3>Personal Knowledge Base</h3>
+                            <div class="pill-list">
+                                <span class="pill subtle">React</span>
+                                <span class="pill subtle">TypeScript</span>
+                                <span class="pill subtle">Firebase</span>
+                            </div>
+                        </div>
+                        <p>Lightweight note system with offline support, tagging, and semantic search.</p>
+                        <ul class="feature-list">
+                            <li>Problem: Hard to recall insights across courses and projects.</li>
+                            <li>Solution: Indexed tagging, fast search, and responsive UI.</li>
+                            <li>Learning: PWA fundamentals and state management.</li>
+                        </ul>
+                        <div class="project-links">
+                            <a class="btn text" href="#case-studies">Case Study</a>
+                            <a class="btn ghost" href="https://github.com/Lhakpa-Sonam-Sherpa" target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="case-studies" class="section container">
+            <div class="section-header">
+                <p class="eyebrow">Project Case Studies</p>
+                <h2>Deep-dives that show how I build</h2>
+            </div>
+            <div class="case-grid">
+                <article class="case-card glass">
+                    <div>
+                        <p class="pill subtle">Commerce</p>
+                        <h3>E-Commerce Platform</h3>
+                        <p class="subtle">Architecture, payments, and performance learnings.</p>
+                    </div>
+                    <a class="btn primary" href="case-studies/ecommerce.html">Read Case Study</a>
+                </article>
+                <article class="case-card glass">
+                    <div>
+                        <p class="pill subtle">Community</p>
+                        <h3>Campus Community App</h3>
+                        <p class="subtle">Realtime collaboration and moderation strategy.</p>
+                    </div>
+                    <a class="btn ghost" href="#contact">Request Walkthrough</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="experience" class="section container">
+            <div class="section-header">
+                <p class="eyebrow">Experience &amp; Timeline</p>
+                <h2>Learning by building</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="pill subtle">2026</span>
+                    <div>
+                        <h3>Backend Systems</h3>
+                        <p>Exploring scalable backend design, queues, and observability.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="pill subtle">2025</span>
+                    <div>
+                        <h3>Built an E-Commerce Website</h3>
+                        <p>Implemented checkout, analytics, and admin dashboards.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="pill subtle">2024</span>
+                    <div>
+                        <h3>Computer Science Student</h3>
+                        <p>Studying BCA at Samarpan Academy with a focus on web technologies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="github" class="section container">
+            <div class="section-header">
+                <p class="eyebrow">GitHub Activity</p>
+                <h2>Open-source footprint</h2>
+                <p class="subtle">Live stats to highlight consistency and languages.</p>
+            </div>
+            <div class="github-grid">
+                <div class="card glass">
+                    <h3>Contribution Graph</h3>
+                    <img src="https://ghchart.rshah.org/6366F1/Lhakpa-Sonam-Sherpa" loading="lazy" alt="GitHub contribution graph for Lhakpa Sonam Sherpa">
+                </div>
+                <div class="card glass">
+                    <h3>GitHub Stats</h3>
+                    <img src="https://github-readme-stats.vercel.app/api?username=Lhakpa-Sonam-Sherpa&show_icons=true&theme=transparent&title_color=6366F1&icon_color=8B5CF6" loading="lazy" alt="GitHub statistics for Lhakpa Sonam Sherpa">
+                </div>
+                <div class="card glass">
+                    <h3>Top Languages</h3>
+                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Lhakpa-Sonam-Sherpa&layout=compact&theme=transparent&title_color=6366F1" loading="lazy" alt="Top languages used by Lhakpa Sonam Sherpa">
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="section container">
+            <div class="section-header">
+                <p class="eyebrow">Blog &amp; Articles</p>
+                <h2>Writing to clarify thinking</h2>
+                <p class="subtle">Quick reads on engineering, UX, and learning journeys.</p>
+            </div>
+            <div class="blog-grid">
+                <article class="card glass">
+                    <p class="pill subtle">Engineering</p>
+                    <h3>Performance-first design for student projects</h3>
+                    <p class="subtle">How to ship fast pages on modest budgets with caching and lazy loading.</p>
+                    <a class="btn text" href="https://github.com/Lhakpa-Sonam-Sherpa" target="_blank" rel="noopener">Read</a>
+                </article>
+                <article class="card glass">
+                    <p class="pill subtle">Learning</p>
+                    <h3>From UI sketches to production code</h3>
+                    <p class="subtle">A step-by-step look at turning ideas into polished interfaces.</p>
+                    <a class="btn text" href="https://github.com/Lhakpa-Sonam-Sherpa" target="_blank" rel="noopener">Read</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section container">
+            <div class="section-header">
+                <p class="eyebrow">Contact</p>
+                <h2>Let’s build something together</h2>
+                <p class="subtle">Prefer email? Feel free to reach out directly.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="card glass">
+                    <h3>Connect</h3>
+                    <div class="contact-links">
+                        <a href="mailto:soamsrp.653@gmail.com">soamsrp.653@gmail.com</a>
+                        <a href="https://github.com/Lhakpa-Sonam-Sherpa" target="_blank" rel="noopener">GitHub</a>
+                        <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+                    </div>
+                    <p>Kathmandu, Nepal — open to remote roles and internships.</p>
+                </div>
+                <form class="card glass contact-form" action="https://formspree.io/f/mzzbwrne" method="POST">
+                    <div class="form-row">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" placeholder="Your name" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input id="email" name="_replyto" type="email" placeholder="name@email.com" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="message">How can I help?</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Project details or questions" required></textarea>
+                    </div>
+                    <button class="btn primary" type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__grid">
+            <div>
+                <div class="logo">
+                    <span class="logo-mark">LS</span>
+                    <span class="logo-text">Lhakpa Sonam Sherpa</span>
+                </div>
+                <p class="subtle">Building thoughtful digital products with clean, scalable code.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-links">
+                <a href="resume.pdf" download>Resume</a>
+                <a href="https://github.com/Lhakpa-Sonam-Sherpa" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
         </div>
-        <p><b>Kathmandu, Nepal</b></p>
-        
-        <p class="copyright"><b>&copy Lhakpa Sonam Sherpa</b></p>
-    </section>
+        <p class="copyright">© 2026 Lhakpa Sonam Sherpa. All rights reserved.</p>
+    </footer>
 </body>
 </html>
 
